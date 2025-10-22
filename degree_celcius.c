@@ -8,16 +8,16 @@ DESCRIPTION : A PROGRAM THAT TRANFERS TEMPRETURE FROM FARENHEIT TO DEGREES
 
 int main()
 {
-float fahrenheit;
-float degree;
+int fahrenheit;
+int degree;
 
 printf("Enter the temperature in fahrenheit :");
-scanf("%f", &fahrenheit);
+scanf("%d", &fahrenheit);
 
 degree = ( fahrenheit - 32 ) * 5/9 ;
 
 printf("\n Your temperature in degree is\n ");
-printf("%f",degree);
+printf("%dr",degree);
 
 
 return 0 ;
