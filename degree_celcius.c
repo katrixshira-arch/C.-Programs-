@@ -1,27 +1,24 @@
- /*
-NAME :SHIPHRAH MIROYA
-REG : PA106/G/28756/25
-DESCRIPTION : A PROGRAM THAT CALCULATES THE AMOUNT OF FARE
-A PASSENGER IS TO BE CHARGED BY MULTIPLYING THE KILOMETRES TRAVELED BY 50
-*/
+/*
+NAME :Shiphrah Miroya
+Reg : PA106\G\28756\25
+DESCRIPTION : A PROGRAM THAT TRANFERS TEMPRETURE FROM DEGREES TO FAHRENHEIT 
 
+*/
 #include<stdio.h>
+
 int main()
 {
-//declaring the variables
-int fare;
-int kilometers;
+float fahrenheit;
+float degree;
 
-//prompts the user to input the distance they traveled
-printf("Enter the distance to be travelled in kilometres :");
-scanf("%d",&kilometers); 
+printf("Enter the temperature in fahrenheit :");
+scanf("%f", &fahrenheit);
 
-//main calculation to obtain fare
-fare = kilometers* 50 ;
+degree = ( fahrenheit - 32 ) * 5/9 ;
+
+printf("\n Your temperature in degree is\n ");
+printf("%f",degree);
 
 
-//displays the fare to the user
-printf("\nYOUR FARE IS KSH:");
-printf("%d",fare);
-
-return 0;
+return 0 ;
+}
