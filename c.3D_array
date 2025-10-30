@@ -1,8 +1,7 @@
 */
 Name:Shiphrah Miroya
 Reg no:PA106/G/28756/25
-Description:
-
+Description:A program that calculates and displays total number of occupied rooms across all branches in a certain hotel.
 */
 
 #include <stdio.h>
