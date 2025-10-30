@@ -1,8 +1,7 @@
  */
-Name
-Reg no
-Description
-
+Name:Shiphrah Miroya
+Reg no:PA106/G/28756/25
+Description:A program that calculates and displays total weekly revenue and average daily revenue collected in a certain hotel.
 */ 
 
 #include <stdio.h>
