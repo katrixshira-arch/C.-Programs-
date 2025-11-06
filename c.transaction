@@ -1,43 +1,30 @@
- /*
+/*
 NAME:SHIPHRAH MIROYA
 REG NO:PA106/G/28756/25
 DATE:3/11/2025
-DESCRIPTION:A PROGRAM TO DISPLAY BORROWED BOOKS
 */
 
+//sales total
 #include<stdio.h>
 #include<stdlib.h>
 
-//borrowed_books
+int main()
+{
+        FILE *fptr;
+        float sale,total=0.0;
 
-int main(){
-
-        FILE* fptr;
-        char title[100];
-        char choice;
-
-        fptr=fopen(" Borrowed_books.txt","a");
-        if(fptr==NULL){
-                printf("Error opening file!\n");
+        fptr=fopen("sales.txt","r");
+        if (fptr==NULL){
+                printf("Error opening sales.txt!\n");
                 exit(1);
-                        }
-                        do{
-                                printf("Enter book title:");
-                                fgets(title,sizeof(title),stdin);
-
-                                //write to file
-                                fprintf(fptr,"%s",title);
-                                printf("Book title successfully stored!\n");
-
-                                printf("Add another book?(y/n);");
-                                scanf("%c",& choice);
-                                getchar();                                
-                                }
-           while(choice=='y',choice=='Y');
-
-                   fclose(fptr);
-
-           printf("All tittles saved in borrowed_books.txt\n");
-           return 0        ;
-
         }
+        while(fscanf(fptr,"%f",& sale)==1){total+=
+        sale;}
+
+  printf("Total sales for the day: Kshs %2f \n",total);
+
+fclose(fptr);
+
+
+        return 0;
+}
